@@ -1,9 +1,12 @@
 $(function() {
-  $(".weekly-slider__inner").slick({
+  $(".weekly-slider__box").slick({
     slidesToShow: 1,
-    slidesToScroll: 1,
-    arrows: true,
-    appendArrows: $(".product-slider__title")
+    slidesToScroll: 1
+  });
+
+  $(".followers-box").slick({
+    slidesToShow: 3,
+    slidesToScroll: 1
   });
 
   $(".rate-star").rateYo({
@@ -17,4 +20,6 @@ $(function() {
     readOnly: true,
     starWidth: "13px"
   });
+
+  var mixer = mixitup(".new-products__inner-box");
 });
