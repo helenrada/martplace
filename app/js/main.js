@@ -1,7 +1,8 @@
 $(function() {
   $(".weekly-slider__box").slick({
     slidesToShow: 1,
-    slidesToScroll: 1
+    slidesToScroll: 1,
+    appendArrows: $(".weekly-slider__arrows")
   });
 
   $(".followers-box").slick({
