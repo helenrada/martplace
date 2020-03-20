@@ -55,10 +55,18 @@ footer {
   background-position: center;
 }
 
-.title {
+.title-block {
   font-size: 30px;
   line-height: 28px;
   box-shadow: 0px 2px 4px 0px rgba(108, 111, 115, 0.1);
   padding: 40px 170px 40px 30px;
   background-color: #fff;
+}
+.title {
+  font-size: 36px;
+  line-height: 28px;
+  text-align: center;
+  a {
+    color: #0674ec;
+  }
 }
