@@ -811,6 +811,7 @@
   z-index: 1;
   color: #7347c1;
 }
+
 .reviews__items .lnr-chevron-right {
   display: flex;
   align-items: center;
@@ -830,6 +831,7 @@
   width: 555px;
   height: 315px;
   border-left: 2px solid #0674ec;
+  background-color: rgb(255, 255, 255);
   box-shadow: 0px 2px 50px 0px rgba(0, 0, 0, 0.08);
   border-radius: 4px;
   padding: 50px 37px;
@@ -837,6 +839,7 @@
     margin-left: 27px;
   }
 }
+
 .reviews__item-author {
   display: flex;
   justify-content: space-between;
@@ -920,7 +923,7 @@
 // end news
 
 // start guarantee
-.container {
+.guarantee {
   padding: 60px 0;
 }
 .guarantee__inner {
@@ -930,6 +933,13 @@
 .guarantee-item {
   text-align: center;
 }
+.guarantee__img {
+  height: 120px;
+  img {
+    align-items: center;
+  }
+}
+
 .guarantee-text {
   font-size: 24px;
   margin-top: 30px;
@@ -944,14 +954,13 @@
 
 // start banner
 .banner {
+  padding: 108px 0;
   background-image: url(../images/bg-banner.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 .banner__inner {
-  height: 400px;
-  padding: 108px 0;
   color: #fff;
   text-align: center;
 }
@@ -972,3 +981,85 @@
   line-height: 72px;
 }
 // end banner
+
+// start footer
+.footer {
+  background-color: #262b30;
+  color: #ababab;
+  padding: 110px 0 120px;
+}
+.footer__inner {
+  display: flex;
+  justify-content: space-between;
+}
+.footer__info {
+  max-width: 290px;
+}
+.footer__social {
+  max-width: 370px;
+}
+.footer__col-title {
+  font-size: 18px;
+  margin-bottom: 30px;
+  padding-top: 11px;
+}
+.footer__menu a,
+.footer__info-phone a {
+  color: #ababab;
+}
+.footer__logo {
+  margin-bottom: 22px;
+}
+.footer__text {
+  font-size: 15px;
+  line-height: 28px;
+  margin-bottom: 28px;
+}
+.footer__menu li a {
+  font-size: 15px;
+  line-height: 32px;
+}
+
+.footer__info span {
+  padding-right: 10px;
+}
+.footer__info-phone,
+.footer__info-email,
+.footer__info-adress {
+  margin-bottom: 8px;
+}
+.footer__info-adress {
+  display: flex;
+  align-items: center;
+  line-height: 25px;
+}
+.footer__form {
+  position: relative;
+  input {
+    width: 360px;
+    height: 50px;
+    border-radius: 32px;
+    border: none;
+    outline: none;
+    padding-left: 30px;
+    padding-right: 125px;
+    font-size: 15px;
+    ::placeholder {
+      font-size: 15px;
+      color: #ababab;
+    }
+  }
+  button {
+    position: absolute;
+    right: 9px;
+    top: -1px;
+    font-size: 15px;
+    padding: 17px 30px;
+    border-radius: 32px;
+    border: none;
+    background-color: #0674ec;
+    color: #fff;
+  }
+}
+
+// end footer
